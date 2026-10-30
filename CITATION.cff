@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below and link to https://simplegpacalculator.com/latin-honors-gpa/"
+type: dataset
+title: "Latin honors GPA requirements at 296 US colleges and universities, 2026-27"
+authors:
+  - name: "Simple GPA Calculator"
+    website: "https://simplegpacalculator.com/"
+    email: "support@simplegpacalculator.com"
+date-released: 2026-10-19
+license: CC-BY-4.0
+url: "https://simplegpacalculator.com/latin-honors-gpa/"
+repository: "https://github.com/bellemann/latin-honors-gpa"
+keywords:
+  - latin honors
+  - cum laude
+  - magna cum laude
+  - summa cum laude
+  - GPA
+  - higher education

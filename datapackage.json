@@ -1,0 +1,96 @@
+{
+  "name": "latin-honors-gpa",
+  "title": "Latin honors GPA requirements at 296 US colleges and universities, 2026-27",
+  "homepage": "https://simplegpacalculator.com/latin-honors-gpa/",
+  "version": "2026.10.19",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Official catalogs, registrar pages and policies of each school; see source_url per row"
+    }
+  ],
+  "resources": [
+    {
+      "name": "latin-honors-gpa-2026",
+      "path": "latin-honors-gpa-2026.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "institution",
+            "type": "string",
+            "description": "School name"
+          },
+          {
+            "name": "state",
+            "type": "string",
+            "description": "Two-letter state code (DC for Washington, DC)"
+          },
+          {
+            "name": "method",
+            "type": "string",
+            "description": "How honors are awarded",
+            "constraints": {
+              "enum": [
+                "fixed GPA",
+                "percentage of class",
+                "mixed",
+                "no Latin honors",
+                "other"
+              ]
+            }
+          },
+          {
+            "name": "cum_laude",
+            "type": "string",
+            "description": "Cum laude cutoff as written by the school: a GPA, or a class share such as 'top 5%'"
+          },
+          {
+            "name": "magna_cum_laude",
+            "type": "string",
+            "description": "Magna cum laude cutoff, same format"
+          },
+          {
+            "name": "summa_cum_laude",
+            "type": "string",
+            "description": "Summa cum laude cutoff, same format"
+          },
+          {
+            "name": "extra_requirements",
+            "type": "string",
+            "description": "Residency credits, letter-graded hours and similar conditions"
+          },
+          {
+            "name": "catalog_year",
+            "type": "string",
+            "description": "Catalog edition, for example 2026-27, when the source states it"
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "format": "uri",
+            "description": "Official page the row was taken from"
+          },
+          {
+            "name": "checked",
+            "type": "date",
+            "description": "Date the source was read"
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Anything the row needs to be read correctly"
+          }
+        ]
+      }
+    }
+  ]
+}
